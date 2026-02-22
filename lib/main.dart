@@ -8,15 +8,15 @@ import 'core/app_router.dart';
 import 'core/app_routes.dart';
 import 'core/app_text_styles.dart';
 
-// void main() {
-//   runApp(const NewsReaderApp());
-// }
-void main() => runApp(
-  DevicePreview(
-    enabled: !kReleaseMode,
-    builder: (context) => NewsReaderApp(), // Wrap your app
-  ),
-);
+void main() {
+  runApp(const NewsReaderApp());
+}
+// void main() => runApp(
+//   DevicePreview(
+//     enabled: !kReleaseMode,
+//     builder: (context) => NewsReaderApp(), // Wrap your app
+//   ),
+// );
 
 class NewsReaderApp extends StatelessWidget {
   const NewsReaderApp({super.key});
