@@ -46,32 +46,46 @@ This document outlines the Cover Letter and Job Interview management system inte
 
 ```
 lib/
-├── features/
-│   ├── cover_letter/
-│   │   ├── models/
-│   │   │   └── cover_letter_model.dart
-│   │   ├── providers/
-│   │   │   └── cover_letter_provider.dart
-│   │   ├── screens/
-│   │   │   ├── cover_letter_list_screen.dart
-│   │   │   ├── cover_letter_create_screen.dart
-│   │   │   └── cover_letter_detail_screen.dart
-│   │   └── widgets/
-│   │       ├── cover_letter_card.dart
-│   │       └── cover_letter_form.dart
-│   │
-│   └── job_interview/
-│       ├── models/
-│       │   └── interview_model.dart
-│       ├── providers/
-│       │   └── interview_provider.dart
-│       ├── screens/
-│       │   ├── interview_list_screen.dart
-│       │   ├── interview_create_screen.dart
-│       │   └── interview_detail_screen.dart
-│       └── widgets/
-│           ├── interview_card.dart
-│           └── interview_form.dart
+├── main.dart
+│
+├── core/
+│   ├── app_providers.dart
+│   ├── app_router.dart
+│   ├── app_routes.dart
+│   └── app_text_styles.dart
+│
+├── models/
+│   ├── user_model.dart
+│   ├── cover_letter_model.dart
+│   └── interview_model.dart
+│
+├── controllers/
+│   ├── auth_controller.dart
+│   ├── cover_letter_controller.dart
+│   └── interview_controller.dart
+│
+├── services/
+│   ├── auth_service.dart
+│   ├── cover_letter_service.dart
+│   └── interview_service.dart
+│
+├── views/
+│   ├── login_view.dart
+│   ├── cover_letter_list_view.dart
+│   ├── cover_letter_create_view.dart
+│   ├── cover_letter_detail_view.dart
+│   ├── interview_list_view.dart
+│   ├── interview_create_view.dart
+│   └── interview_detail_view.dart
+│
+└── widgets/
+    ├── loading_state_widget.dart
+    ├── error_state_widget.dart
+    ├── empty_state_widget.dart
+    ├── cover_letter_card.dart
+    ├── cover_letter_form.dart
+    ├── interview_card.dart
+    └── interview_form.dart
 ```
 
 ---
